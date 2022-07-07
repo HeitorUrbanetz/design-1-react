@@ -59,6 +59,108 @@ body {
   box-sizing: border-box;
 }
 
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 html {
   font-size: 62.5%;
+}
+@media (max-width: 120rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 90rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1129px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 906px) {
+  html {
+    font-size: 30%;
+  }
+  html .header {
+    height: 80vh;
+  }
+}
+@media (max-width: 906px) {
+  html {
+    font-size: 30%;
+  }
+  html .header {
+    height: 40vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  }
+  html .about {
+    margin-top: -18rem;
+  }
+}
+@media (max-width: 670px) {
+  html {
+    font-size: 25%;
+  }
+  html .header {
+    height: 60vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+  }
+  html .popup-container {
+    width: 40%;
+    height: 40%;
+  }
+  html .popup-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 562px) {
+  html {
+    font-size: 20%;
+  }
+  html .header {
+    height: 40vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  }
+  html .about {
+    margin-top: -18rem;
+  }
+}
+@media (max-width: 442px) {
+  html {
+    font-size: 15%;
+  }
+  html .header {
+    height: 30vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 20vh, 0 100%);
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 10%;
+  }
+  html .up {
+    margin-top: -10rem;
+  }
+  html .form-radio-button {
+    border: 2px solid #55c57a;
+  }
+  html .last-btn {
+    margin-top: -12rem;
+  }
+  html .navigation-checkbox:checked ~ .navigation-background {
+    transform: scale(130);
+  }
 }/*# sourceMappingURL=main.css.map */

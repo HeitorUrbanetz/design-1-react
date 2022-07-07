@@ -43,7 +43,7 @@ const Book = () => {
                             </div>
                         </div>
 
-                        <div className='form-group'>
+                        <div className='form-group last-btn'>
                             <button className='btn btn-green no-border'>Next Step &rarr;</button>
                         </div>
 
