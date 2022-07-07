@@ -1,0 +1,164 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-big {
+  margin-bottom: 8rem;
+}
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all 0.2s;
+}
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #FFF;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0);
+}
+
+.btn-green {
+  background-color: #55c57a;
+  color: #FFF;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  margin-top: -1rem;
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem;
+  width: 100rem;
+  margin: 0 auto;
+}
+.book-form {
+  width: 50%;
+  padding: 6rem;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  color: inherit;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+.form-input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.form-input::-webkit-input-placeholder {
+  color: #999;
+}
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form-input:-moz-placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: 0;
+  transform: translateY(-4rem);
+}
+.form-input:-ms-input-placeholder + .form-label {
+  opacity: 0;
+  visibility: 0;
+  transform: translateY(-4rem);
+}
+.form-input:placeholder-shown + .form-label {
+  opacity: 0;
+  visibility: 0;
+  transform: translateY(-4rem);
+}
+.form-radio-group {
+  width: 49%;
+  display: inline-block;
+}
+.form-radio-input {
+  display: none;
+}
+.form-radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+.form-radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+.form-radio-button::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  height: 1.3rem;
+  width: 1.3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(25%, 25%);
+  background-color: #55c57a;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.form-radio-input:checked ~ .form-radio-label .form-radio-button::after {
+  opacity: 1;
+}
+
+.small {
+  font-size: 3.2rem;
+}
+
+.no-border {
+  border: none;
+  margin-top: 3rem;
+  cursor: pointer;
+}/*# sourceMappingURL=book.css.map */

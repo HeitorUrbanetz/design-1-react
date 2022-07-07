@@ -1,0 +1,43 @@
+@import '../../base/base.scss';
+
+.features {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom ,
+    rgba($color-primary-light, 0.8), 
+    rgba($color-primary-dark, 0.8)), 
+    url(../../../img/nat-4.jpg);
+    background-size: cover;
+    margin-top: -11rem;
+
+    transform: skewY(-7deg);
+
+    &-list {
+        transform: skewY(7deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color-white, 0.65);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    width: 30rem;
+    height: 40rem;
+    transition: all .3s;
+    
+    &-icon {
+        font-size: 6rem;
+    }
+
+    &:hover {
+        transform: scale(1.05) translateY(-1.5rem);
+    }
+}
